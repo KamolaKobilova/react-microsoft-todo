@@ -1,0 +1,88 @@
+/* *,
+*::after,
+*::before{
+    box-sizing: border-box;
+} */
+body {
+    margin-top: -40px;
+    width: 100%;
+}
+
+.main_body{
+    margin-top: 30px;
+    background-color: #2a78d7;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+li {
+    list-style: none;
+}
+
+.itemss {
+    width: 400px;
+    height: 28px;
+    margin-left: 160px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+ 
+.itemss:hover {
+    background-color: rgb(213, 237, 247);
+}
+#left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#left li {
+    margin-top: 15px;
+    margin-right: 30px;
+    font-size: 18px;
+    color: white;
+}
+#main_item .items {
+    font-size: 10px;
+    margin-top: 30px;
+}
+ .items h4 {
+    margin: -46px 10px 10px 60px;
+    
+    color: white;
+}
+/* =========Sidebar=========== */
+.text {
+    margin-top: -30px;
+    width: 300px;
+    background-color: #f4f4f4;
+    height: 100vh;
+}
+.h2 {
+    margin: 30px 10px 10px 50px;
+}
+.ul2 {
+    margin-left: -10px;
+}
+.ul2 .li_items {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+.li_items .fas {
+    margin-right: 8px;
+}
+.li_items:hover{
+    font-size: 20px;
+}
+p {
+    color: #6b6d71;
+}
+.btn, .btn:hover {
+    background-color: white;
+}
+#exampleModal {
+    margin-left: 10px;
+}

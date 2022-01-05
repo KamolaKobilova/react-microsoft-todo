@@ -1,10 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Body from './components/Body';
+import Footer from './components/Footer';
+import './components/style.css'
 
 ReactDOM.render(
    <>
-  
+  <Header/>
+  <Sidebar/>
+  <Body/>
+  <Footer/>
   </>,
   document.getElementById('root')
 );
