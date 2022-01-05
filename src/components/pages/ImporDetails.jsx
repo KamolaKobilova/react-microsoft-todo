@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Body() {
+export default function ImporDetails() {
     return (
         <div>
             
         </div>
     )
 }
-
-export default Body

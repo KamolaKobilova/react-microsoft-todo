@@ -1,18 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header';
-import Sidebar from './components/Sidebar';
-import Body from './components/Body';
-import Footer from './components/Footer';
+import Sidebar from './components/pages/Sidebar';
+import MyDay from './components/pages/MyDay';
+import Important from './components/pages/Important';
+import Planned from './components/pages/Planned';
+import Assign from './components/pages/Assign';
 import './components/style.css'
 
 ReactDOM.render(
    <>
-  <Header/>
-  <Sidebar/>
-  <Body/>
-  <Footer/>
+   <BrowserRouter >
+     <Header/>
+     <Sidebar/>
+     <MyDay/>
+     <Important/>
+     <Planned/>
+     <Assign/>
+   </BrowserRouter>
+  
   </>,
   document.getElementById('root')
 );

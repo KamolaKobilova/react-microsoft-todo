@@ -1,11 +1,9 @@
 import React from 'react'
 
-function Footer() {
+export default function Planned() {
     return (
         <div>
             
         </div>
     )
 }
-
-export default Footer
