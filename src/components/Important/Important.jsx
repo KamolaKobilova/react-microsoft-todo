@@ -18,7 +18,7 @@ export default function Important(props) {
         },[])
      return (
         <div>
-            <ul>
+            <ul className='h5'>
                 {
                     users.map(item=>{
                        return (<li key={item.id}>

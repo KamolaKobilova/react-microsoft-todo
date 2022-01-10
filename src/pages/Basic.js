@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+
 
 export default function Basic() {
     return (
         <div className='container'>
             <div className="header_basic">
                 <ul className="top">
-                    <li className="top_items"><img src="../" title='microsoft' /></li>
+                    <li className="top_items"><img src="./components/assets/RE1mu3b.png" title='microsoft' /></li>
                     <li className="top_items"><a href="">Microsoft 365</a></li>
                     <li className="top_items"><a href="">Office</a></li>
                     <li className="top_items"><a href="">Windows</a></li>

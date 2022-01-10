@@ -21,7 +21,7 @@ export default function ImporDetails(props) {
   }, []);
   console.log(user);
   return (
-    <div>
+    <div className="h5">
       <h1>user details</h1>
       <h4>{user.name}</h4>
       <h4>{user.email}</h4>

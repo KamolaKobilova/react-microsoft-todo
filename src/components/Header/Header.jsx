@@ -1,5 +1,5 @@
 import React from 'react';
-import './style.css';
+import '../style.css';
 
 function Header() {
     return (
@@ -22,6 +22,7 @@ function Header() {
       <div class="modal-body">
        <div className="microsoft">
            <h2>Microsoft 365</h2>
+           
        </div>
       </div>
      
