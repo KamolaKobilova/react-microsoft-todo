@@ -69,13 +69,14 @@ li {
 }
 .ul2 .li_items {
     margin-bottom: 25px;
-    font-size: 18px;
+    font-size: 15px;
 }
 .li_items .fas {
     margin-right: 8px;
 }
 .li_items:hover{
     font-size: 20px;
+    background-color: #ffff;
 }
 p {
     color: #6b6d71;
