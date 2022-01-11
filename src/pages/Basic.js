@@ -1,4 +1,5 @@
 import React from 'react';
+import './basic.css';
 
 
 export default function Basic() {
@@ -15,6 +16,12 @@ export default function Basic() {
                     <li className="top_items"><a href="">Deals</a></li>
                     <li className="top_items"><a href="">Support</a></li>
                 </ul>
+                  <ul className='top_left'>
+                     <li className='left_items'>All Microsoft</li>
+                     <li className='left_items'>icon</li>
+                     <li className='left_items'>icon</li>
+                     <li className='left_items'>Ic</li>
+                  </ul>
             </div>
            
          

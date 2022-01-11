@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Link, Routes, Route, NavLink} from 'react-router-dom';
 import Important from '../Important/Important';
-import ImportantDetails from '../ImportantDetails/ImporDetails';
+import ImporDetails from '../ImportantDetails/ImporDetails';
 import MyDay from '../MyDay/MyDay';
 import Planned from '../Planned/Planned';
 import Tasks from '../Tasks/Tasks';
@@ -28,7 +28,7 @@ function Sidebar() {
              <Routes>
                  <Route path="/myDay" element={<MyDay/>}/>
                  <Route path="/important" element={<Important/>}/>
-                 <Route path="/important/:userId" element={<ImportantDetails/>}/>
+                 <Route path="/important/:userId" element={<ImporDetails/>}/>
                  {/* <Route path="planned" element={<Planned/>}/> */}
                  {/* <Route path="assignToMe" element={<AssignedToMe/>}/> */}
                  {/* <Route path="Tasks" element={<Tasks/>}/> */}

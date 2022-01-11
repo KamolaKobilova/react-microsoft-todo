@@ -1,0 +1,24 @@
+.top {
+    display: flex;
+    flex-direction: row;
+    
+}
+.top_items {
+    margin-right: 14px;
+    font-size: 15px;
+}
+.top_items a {
+    color: black;
+}
+.top_items:hover {
+    text-decoration: underline;
+}
+.top_left {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: -45px;
+}
+.left_items{
+    margin-right: 10px;
+}
