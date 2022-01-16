@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Link, Routes, Route, NavLink} from 'react-router-dom';
+
 import Important from '../Important/Important';
 import ImporDetails from '../ImportantDetails/ImporDetails';
 import MyDay from '../MyDay/MyDay';

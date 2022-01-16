@@ -4,6 +4,7 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import Important from '../components/Important/Important';
 import ImporDetails from '../components/ImportantDetails/ImporDetails';
 import Basic from './Basic';
+import Planned from '../components/Planned/Planned';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
           <Header/>
           <Sidebar/>
           <Basic/>
+          <Planned/>
         </div>
     )
 }
