@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "books",
+  "info": {
+    "singularName": "book",
+    "pluralName": "books",
+    "displayName": "book",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "date"
+    },
+    "posters": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "country": {
+      "type": "enumeration",
+      "enum": [
+        "USA",
+        "AUS",
+        "UZB"
+      ]
+    },
+    "isFeatured": {
+      "type": "boolean"
+    },
+    "Novel": {
+      "type": "string"
+    }
+  }
+}
