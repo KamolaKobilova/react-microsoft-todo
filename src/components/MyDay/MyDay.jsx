@@ -1,12 +1,14 @@
 import React from 'react';
+// import {StyledComp} from './MyDay.style';
+import './style.css';
 
-import './style.css'
 
 function MyDay() {
     return (
-        <div>
-            <h5 className='h5'>dvsdfg</h5>
-        </div>
+        // <StyledComp>
+        //    <BsGrid3X3GapFill color='blue' size={24} title='grid'/> <h3>My Day</h3>
+        // </StyledComp>
+        <h2>sdmgjdf</h2>
     )
 }
 

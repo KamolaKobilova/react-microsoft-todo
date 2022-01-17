@@ -8,7 +8,7 @@ export const COLORS = {
     activeItem: '#f4f6ff',
     lightGrey: '#f6f6f6',
     iconGrey: '#dddddd',
-    black: '#34373d'
+    black: '#34373d',
   }
   
   export const STYLING_CONFIGS = {

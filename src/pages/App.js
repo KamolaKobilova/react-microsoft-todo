@@ -6,13 +6,15 @@ import ImporDetails from '../components/ImportantDetails/ImporDetails';
 import Basic from './Basic';
 import Planned from '../components/Planned/Planned';
 
+
 function App() {
     return (
         <div>
           <Header/>
           <Sidebar/>
-          <Basic/>
+          <Basic/> 
           <Planned/>
+      
         </div>
     )
 }

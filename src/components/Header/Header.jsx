@@ -1,15 +1,17 @@
 import React from 'react';
+import {BsGrid3X3Gap} from 'react-icons/bs'
 
 import '../style.css';
 
 function Header() {
     return (
         <div>
+         
            <div className="main_body">
              <ul id="main_item">
                  <li className="items">
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
- 
+<button type="button"  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+ <BsGrid3X3Gap size={20} />
 </button>
 
 
