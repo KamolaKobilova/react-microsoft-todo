@@ -6,10 +6,12 @@ import App from './pages/App';
 import './styles/index.css';
 
 
+
 ReactDOM.render(
    <>
    <BrowserRouter >
        <App/>
+       
    </BrowserRouter>
   
   </>,
