@@ -7,6 +7,7 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import Basic from './Basic';
 import Planned from '../components/Planned/Planned';
 import SignIn from './Auth/SignIn';
+import AddToDo from '../components/Main/AddToDo';
 
 // import SignIn from './Auth/SignIn';
 
@@ -25,6 +26,7 @@ function App() {
         <Header/>
         <Sidebar/>
         <Basic/> 
+        <AddToDo/>
       
       </div>
   )
