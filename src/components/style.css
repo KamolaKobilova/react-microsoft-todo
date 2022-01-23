@@ -76,8 +76,21 @@ li {
 }
 .li_items:hover{
     font-size: 20px;
-    background-color: #ffff;
+    background-color: rgb(243, 240, 240);
+    
+ 
 }
+  .spans::after{
+    content: '';
+    background-color: rgb(231, 165, 22);
+    width: 7px;
+    height: 5px;
+    position: absolute;
+    top: 0;
+    left: 100;
+
+}
+
 p {
     color: #6b6d71;
 }

@@ -19,7 +19,7 @@ function Sidebar() {
                <ul className="ul2">
                
                    {/* <li className="li_items"><NavLink style={({isActive}) => isActive ? {color: 'red'}:{}} className={({isActive})} to="/myDay"><p><i class="fas fa-sun"></i> MyDay</p></NavLink></li> */}
-                   <li className="li_items"><NavLink className={({isActive})=> isActive ? 'nav-active': ''} to="/myDay"><p><i class="fas fa-sun"></i> My Day</p></NavLink></li>
+                   <li className="li_items spans"><NavLink className={({isActive})=> isActive ? 'nav-active': ''} to="/myDay"><p><i class="fas fa-sun"></i> My Day</p></NavLink></li>
                    <li className="li_items"><NavLink className={({isActive})=> isActive ? 'nav-active': ''} to="/important"><p><i class="fas fa-star"></i> Important</p></NavLink></li>
                    <li className="li_items"><NavLink className={({isActive})=> isActive ? 'nav-active': ''} to="/important"><p><i class="fas fa-star"></i> ImporDetails</p></NavLink></li>
                    <li className="li_items"><NavLink className={({isActive})=> isActive ? 'nav-active': ''} to="/planned"><p><i class="fas fa-calendar"></i> Planned</p></NavLink></li>
