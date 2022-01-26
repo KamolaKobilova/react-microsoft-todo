@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Header from '../components/Header/Header';
 import Sidebar from '../components/Sidebar/Sidebar';
 // import Important from '../components/Important/Important';
@@ -7,13 +7,13 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import Basic from './Basic';
 import Planned from '../components/Planned/Planned';
 import SignIn from './Auth/SignIn';
-import ToDos from '../components/Main/ToDos'
+// import ToDos from '../components/Main/ToDos'
 
 // import SignIn from './Auth/SignIn';
 
 
 function App() {
-  const [isLogged, setIsLogged] = useState(true)
+  const [isLogged, setIsLogged] = useState(false)
   const [userss, setUserss] = useState({
     "id": null,
     "userName": "",
@@ -26,7 +26,7 @@ function App() {
         <Header/>
         <Sidebar/>
         <Basic/> 
-        <ToDos/>
+        {/* <ToDos/> */}
       
       </div>
   )
@@ -34,7 +34,7 @@ function App() {
   return (
     <SignIn/>
         // <Routes>
-        //    <Route path="./sign-in" element={<SignIn/>}/>  
+        //    <Route path="./planned" element={<Planned/>}/>  
         // </Routes>
   )
 }

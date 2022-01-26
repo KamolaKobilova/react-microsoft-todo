@@ -1,16 +1,53 @@
-:root {
-    font-size: 24px;
-    
+ 
+body{
+  background-color: lightgray;
 }
+.welcome{
+    position: relative;
+    top: 150px;
+    left: 31%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid;
+    width: 450px;
+    height: 350px;
+    background-color: #ffff;
+    border-color: #ffff;
+    box-shadow: lightgray;
+}
+.logo {
+    margin: 40px -25px 0px -180px;
 
-.signIn {
-    margin-top: 200px;
-    margin-left: 300px;
-    height: 300px;
-    width: 300px;
-    text-align: center;
-    position: absolute;
-    top: -20px;
-    left: 170px;
-
+} 
+.logo img {
+    width: 130px;
+    margin-bottom: 15px;
+}
+.logo input {
+   border-color: white;
+}
+.logo .span {
+    color: #0067b8;
+    margin-top: 26px;
+}
+.span:hover {
+    color: #0067b8;
+    text-decoration: underline;
+}
+.btns {
+    width: 100px;
+    margin-right: 6px;
+    position: relative;
+    right: -140px;
+    top: 40px;
+    color: black;
+    background-color: lightgray;
+    border-color: lightgray;
+}
+.blue {
+    background-color: #0067b8;
+    border-color: #2790e0;
+    color: #ffff;
+     
 }
