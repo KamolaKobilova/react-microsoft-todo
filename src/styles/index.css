@@ -25,7 +25,11 @@ body{
     margin-bottom: 15px;
 }
 .logo input {
-   border-color: white;
+   border: none;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+   width: 250px;
+   outline: none;
+   margin-bottom: 10px;
 }
 .logo .span {
     color: #0067b8;

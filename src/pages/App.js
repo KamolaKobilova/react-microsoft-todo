@@ -6,6 +6,7 @@ import Sidebar from '../components/Sidebar/Sidebar';
 // import ImporDetails from '../components/ImportantDetails/ImporDetails';
 import Basic from './Basic';
 import Planned from '../components/Planned/Planned';
+import SignUPP from './Auth/SignUPP';
 import SignIn from './Auth/SignIn';
 // import ToDos from '../components/Main/ToDos'
 
@@ -32,10 +33,11 @@ function App() {
   )
   } 
   return (
-    <SignIn/>
-        // <Routes>
-        //    <Route path="./planned" element={<Planned/>}/>  
-        // </Routes>
+    <SignUPP/>,
+        <Routes>
+           <Route path="/SignIn" element={<SignIn/>}/>  
+           <Route path="/SignUPP" element={<SignUPP/>}/>  
+        </Routes>
   )
 }
 
