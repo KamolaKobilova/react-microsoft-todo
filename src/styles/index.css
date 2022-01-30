@@ -31,11 +31,11 @@ body{
    outline: none;
    margin-bottom: 10px;
 }
-.logo .span {
+.logo .spanBlue {
     color: #0067b8;
     margin-top: 26px;
 }
-.span:hover {
+.spanBlue:hover {
     color: #0067b8;
     text-decoration: underline;
 }
