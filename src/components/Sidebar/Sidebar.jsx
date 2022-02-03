@@ -6,7 +6,10 @@ import ImporDetails from '../ImportantDetails/ImporDetails';
 import MyDay from '../MyDay/MyDay';
 import Planned from '../Planned/Planned';
 import Tasks from '../Tasks/Tasks';
-import {StyledComp, StyledSidebar} from './Sidebar.style'
+
+
+
+// import {StyledComp, StyledSidebar} from './Sidebar.style'
 
 
 

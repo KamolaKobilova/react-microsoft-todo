@@ -4,12 +4,14 @@ import Axios from "../../utils/axios";
 import { Link,useNavigate} from 'react-router-dom';
 import Swal from 'sweetalert2';
 import microsoft from '../../assets/images/microsoft.png';
+import {useDispatch} from 'react-redux'
 // import {VscKey} from 'react-icons/vsc';
 
 
 
 function SignIn({updateAuthData}) {
   let navigate = useNavigate();
+  const dispatch = useDispatch()
   const [loading, setLoading] = useState(false);
   const [user, setUser] = useState({
     identifier: 'abdulkhamid@gmail.com',
@@ -26,7 +28,7 @@ function SignIn({updateAuthData}) {
       const { password, identifier } = user;
       if (password && identifier) {
         setLoading(true);
-        const { data } = await Axios.post('/auth/local', user);
+        const { data } = await Axios.post("/auth/local/register", user);
         console.log(data);
         Swal.fire({
           icon: 'success',
@@ -72,8 +74,8 @@ function SignIn({updateAuthData}) {
          <input type="text" placeholder='password' onChange={handleInputChange} />
          <h6><span className='spanBlue'>Use a phone number instead</span></h6>
          <h6 className='spanBlue'>No account <span><Link to="/sign-up">Create now</Link></span></h6>
-       <button className='btns blue'  onClick={handleSubmit} disabled={loading}>
-            {loading ? 'Signing in...' : 'Sign In'}Next</button>
+       <button className='btns blue' onClick={handleSubmit}  >
+             Next</button>
        </div>
        
     </div>
