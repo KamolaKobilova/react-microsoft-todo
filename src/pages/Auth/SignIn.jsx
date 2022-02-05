@@ -28,7 +28,7 @@ function SignIn({updateAuthData}) {
       const { password, identifier } = user;
       if (password && identifier) {
         setLoading(true);
-        const { data } = await Axios.post("/auth/local/register", user);
+        const { data } = await Axios.post("/auth/local", user);
         console.log(data);
         Swal.fire({
           icon: 'success',
@@ -39,19 +39,20 @@ function SignIn({updateAuthData}) {
           setLoading(false);
           localStorage.setItem('user', JSON.stringify(data.user))
           localStorage.setItem('token', data.jwt);
-          const userData = {
-            token: data.jwt,
-            user: data.user
-          }
-          console.log(userData)
-          updateAuthData(userData);
-          navigate('/');
+          window.location.href = '/';
+          // const userData = {
+          //   token: data.jwt,
+          //   user: data.user
+          // }
+          // console.log(userData)
+          // updateAuthData(userData);
+          // navigate('/');
         })
 
       } else {
         Swal.fire({
           icon: 'error',
-          text: 'Please fill all required fields',
+          text: 'Invalid identifier or password',
         });
       }
 
@@ -70,12 +71,13 @@ function SignIn({updateAuthData}) {
        <div className="logo">
          <img src={microsoft}  />
          <h4>Sign in</h4>
-         <input type="text" placeholder='email' onChange={handleInputChange} /><br />
+         <input type="text" name='identifier' value={identifier} placeholder='email' onChange={handleInputChange} /><br />
          <input type="text" placeholder='password' onChange={handleInputChange} />
          <h6><span className='spanBlue'>Use a phone number instead</span></h6>
-         <h6 className='spanBlue'>No account <span><Link to="/sign-up">Create now</Link></span></h6>
-       <button className='btns blue' onClick={handleSubmit}  >
-             Next</button>
+         <h6 className='spanBlue'>Not have account <span><Link to="/sign-up">Sign up now</Link></span></h6>
+            <button className='btns blue' onClick={handleSubmit} disabled={loading}  > 
+            {loading ? 'Signing in ': 'Sign in'}
+             </button>
        </div>
        
     </div>

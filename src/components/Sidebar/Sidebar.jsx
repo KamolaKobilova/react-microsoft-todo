@@ -9,6 +9,7 @@ import Tasks from '../Tasks/Tasks';
 
 
 
+
 // import {StyledComp, StyledSidebar} from './Sidebar.style'
 
 
@@ -37,9 +38,9 @@ function Sidebar() {
                  <Route path="/myDay" element={<MyDay/>}/>
                  <Route path="/important" element={<Important/>}/>
                  <Route path="/important/:userId" element={<ImporDetails/>}/>
-                 {/* <Route path="planned" element={<Planned/>}/> */}
+                 {/* <Route path="planned" element={<Planned/>}/> 
                  {/* <Route path="assignToMe" element={<AssignedToMe/>}/> */}
-                 {/* <Route path="Tasks" element={<Tasks/>}/> */}
+                  {/* <Route path="Tasks" element={<Tasks/>}/>  */}
                  
              </Routes>
                

@@ -1,41 +1,51 @@
-import React, { useState } from "react";
+import React, { Suspense,  lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "../components/Header/Header";
-import Sidebar from "../components/Sidebar/Sidebar";
+
 // import Important from '../components/Important/Important';
 // import ImporDetails from '../components/ImportantDetails/ImporDetails';
-import Basic from "./Basic";
-import Planned from "../components/Planned/Planned";
-import SignUPP from "./Auth/SignUPP";
-import SignIn from "./Auth/SignIn";
+const Basic = lazy(()=> import("./Basic"))
+const Header = lazy(()=> import("../components/Header/Header"));
+const Sidebar = lazy(()=> import("../components/Sidebar/Sidebar"));
+const SignUPP = lazy(()=> import("./Auth/SignUPP"));
+const SignIn = lazy(()=> import("./Auth/SignIn"));
 // import ToDos from '../components/Main/ToDos'
 
 // import SignIn from './Auth/SignIn';
 
 function App() {
-  const [isLogged, setIsLogged] = useState(false);
-  const [userss, setUserss] = useState({
-    id: null,
-    userName: "",
-    email: "",
-  });
+  const user = JSON.parse(localStorage.user || '{}');
+  const token = localStorage.token;
+  // const [isLogged, setIsLogged] = useState(false);
+  // const [userss, setUserss] = useState({
+  //   id: null,
+  //   userName: "",
+  //   email: "",
+  // });
 
-  if (isLogged) {
+  if (token && user?.id) {
     return (
-      <div>
+      <Suspense fallback={<div>Loading...</div>}>
+          <div>
         <Header />
         <Sidebar />
         <Basic />
-        {/* <ToDos/> */}
       </div>
+      </Suspense>
+
     );
   }
   return (
-      <Routes>
-        <Route path="/sign-in" element={<SignIn />} />
-        <Route path="/sign-up" element={<SignUPP />} />
-        <Route path="*" element={<Sidebar />} />
-      </Routes>
+    
+        <>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          <Route path="/sign-up" element={<SignUPP />} />
+          <Route path="/sign-in" element={<SignIn />} />
+          <Route path="*" element={<Sidebar />} />
+        </Routes>
+      </Suspense>
+    </>
+    
   );
 }
 
