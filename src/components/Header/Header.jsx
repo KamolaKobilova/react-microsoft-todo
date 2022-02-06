@@ -3,9 +3,10 @@ import {BsGrid3X3Gap} from 'react-icons/bs'
 
 import '../style.css';
 
-function Header() {
-    return (
-        <div>
+  function Header(props) {
+    console.log(props);
+     return (
+         <div>
          
            <div className="main_body">
              <ul id="main_item">
@@ -38,12 +39,7 @@ function Header() {
              
                 <h4><input type="text"  className='itemss' placeholder='search' /> </h4> 
              
-             <ul id="left">
-                 <li className="right_items"><i class="fa fa-cog" aria-hidden="true"></i></li>
-                 <li className="right_items"><i class="fa fa-question" aria-hidden="true"></i></li>
-                 <li className="right_items"><i class="fa fa-cart-plus" aria-hidden="true"></i></li>
-                 <li className="right_items"><i class="fa fa-user-plus" aria-hidden="true"></i></li>
-             </ul>
+             
           </div> 
         </div>
     )

@@ -1,6 +1,7 @@
-import React, { Suspense,  lazy } from "react";
+import React, { Suspense,  lazy, createContext } from "react";
 import { Routes, Route } from "react-router-dom";
 
+export const AppContext = createContext({user: {}, token: '', updateUser: undefined})
 // import Important from '../components/Important/Important';
 // import ImporDetails from '../components/ImportantDetails/ImporDetails';
 const Basic = lazy(()=> import("./Basic"))
@@ -24,13 +25,16 @@ function App() {
 
   if (token && user?.id) {
     return (
-      <Suspense fallback={<div>Loading...</div>}>
-          <div>
-        <Header />
-        <Sidebar />
-        <Basic />
-      </div>
-      </Suspense>
+      <AppContext.Provider value={{user, token}}>
+         <Suspense fallback={<div>Loading...</div>}>
+           <div>
+           <Header  user={user}/>
+           <Sidebar />
+           <Basic />
+          </div>
+        </Suspense>
+      </AppContext.Provider>
+     
 
     );
   }
@@ -41,7 +45,7 @@ function App() {
         <Routes>
           <Route path="/sign-up" element={<SignUPP />} />
           <Route path="/sign-in" element={<SignIn />} />
-          <Route path="*" element={<Sidebar />} />
+          <Route path="*" element={<Basic />} />
         </Routes>
       </Suspense>
     </>
